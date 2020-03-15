@@ -15,6 +15,17 @@
       "**/__tests__/**/*.[jt]s?(x)": "babel-jest"
     }
   },
+  "husky": {
+      "hooks": {
+          "pre-commit": "tsc --noEmit && lint-staged"
+      }
+  },
+  "lint-staged": {
+      "*.[jt]s?(x)": [
+          "eslint --fix",
+          "git add"
+      ]
+  },
   "keywords": [
     "typescript",
     "react",
@@ -43,7 +54,9 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.3",
     "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "style-loader": "^1.0.1",
     "webpack": "^4.42.0",
