@@ -22,8 +22,8 @@
   },
   "lint-staged": {
       "*.[jt]s?(x)": [
-          "eslint --fix",
-          "git add"
+          "prettier --write",
+          "eslint --fix"
       ]
   },
   "keywords": [
