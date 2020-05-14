@@ -2,7 +2,7 @@
 
 [![MIT][license-badge]][LICENSE]
 [![Build Status - GitHub Actions][gha-badge]][gha-ci]
-[![TypeScript version][ts-badge]][typescript-37]
+[![TypeScript version][ts-badge]][typescript-38]
 [![Webpack version][webpack-badge]][webpack-4]
 [![React version][react-badge]][react-16]
 [![Babel version][babel-badge]][babel-7]
@@ -25,6 +25,6 @@ Licensed under the MIT. See the [LICENSE](https://github.com/CodingSolo/ts-react
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/CodingSolo/ts-react-webpack/blob/master/LICENSE
 [gha-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2CodingSolo%2Fts-react-webpack%2Fbadge&style=flat
-[gha-ci]: https://github.com/CodingSolo/ts-react-webpack/workflows/Node.js%20CI/badge.svg?branch=master
+[gha-ci]: https://github.com/CodingSolo/ts-react-webpack/workflows/.github/workflows/nodejs.yml/badge.svg?branch=develop
 
 [repo-template-action]: https://github.com/CodingSolo/ts-react-webpack/generate
