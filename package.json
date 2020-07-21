@@ -73,5 +73,9 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "typescript": "^3.9.7"
+  },
+  "resolutions": {
+      "lodash": "^4.17.19",
+      "http-proxy": "^1.18.1"
   }
 }
