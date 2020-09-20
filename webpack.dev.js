@@ -1,13 +1,13 @@
-const merge = require ('webpack-merge');
-const path = require('path');
-const common = require('./webpack.config');
+const { merge } = require("webpack-merge");
+const path = require("path");
+const common = require("./webpack.config");
 
 const config = {
-    mode : 'development',
-    devtool: 'inline-source-map',
+    mode: "development",
+    devtool: "inline-source-map",
     output: {
-        path: path.join(__dirname, './build'),
-        filename: 'bundle.js',
+        path: path.join(__dirname, "./build"),
+        filename: "bundle.js",
     },
 };
 
