@@ -1,28 +1,31 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
-    entry: path.join(__dirname, './src/index'),
-    resolve:{
-        extensions: ['.ts','.tsx','.js']
+    entry: path.join(__dirname, "./src/index"),
+    resolve: {
+        extensions: [".ts", ".tsx", ".js"],
     },
-    module:{
-        rules:[
+    devServer: {
+        open: true,
+    },
+    module: {
+        rules: [
             {
                 test: /\.(ts|js)(x)?$/,
                 exclude: /node_modules/,
-                use:{
-                    loader :'babel-loader',
+                use: {
+                    loader: "babel-loader",
                 },
             },
             {
                 test: /\.css$/i,
                 use: [
                     {
-                        loader: 'style-loader',
+                        loader: "style-loader",
                     },
                     {
-                        loader: 'css-loader',
+                        loader: "css-loader",
                         options: {
                             modules: true,
                         },
@@ -33,7 +36,7 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src', 'index.html'),
+            template: path.join(__dirname, "src", "index.html"),
             minify: {
                 removeComments: true,
                 collapseWhitespace: true,
