@@ -43,7 +43,7 @@
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
-    "@testing-library/react": "^11.2.5",
+    "@testing-library/react": "^11.2.6",
     "@types/jest": "^26.0.22",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
