@@ -13,11 +13,6 @@
     "cypress:open": "cypress open",
     "prepare": "husky install"
   },
-  "jest": {
-    "transform": {
-      "**/__tests__/**/*.[jt]s?(x)": "babel-jest"
-    }
-  },
   "husky": {
     "hooks": {
       "pre-commit": "tsc --noEmit && lint-staged"
